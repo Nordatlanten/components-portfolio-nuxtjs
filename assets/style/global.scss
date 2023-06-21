@@ -1,0 +1,22 @@
+// Global variables for project.
+$horizontal-spacing: 24px;
+$color-yellow: #F0BB46;
+$color-navy: #041852;
+$header-height: 64px;
+
+//Google fonts. I'm not a big fan of using font APIs for integrity reasons, but just for convenience.
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, li{
+  font-family: 'Open Sans', sans-serif;
+  color: $color-navy;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  color: $color-navy;
+}
