@@ -11,6 +11,9 @@
       <nav>
         <ul>
           <li>
+            <NuxtLink :class="{ 'link-underline': ($route.path === '/examples') }" to="/examples">Examples</NuxtLink>
+          </li>
+          <li>
             <NuxtLink :class="{ 'link-underline': ($route.path === '/about') }" to="/about">About</NuxtLink>
           </li>
           <li>
@@ -110,6 +113,11 @@ a:active {
     background-repeat: no-repeat;
     min-height: 36px;
     min-width: 36px;
+    cursor: pointer;
+
+    //This particular icon sits a bit funky.
+    position: relative;
+    top: 4px;
   }
   &__content{
     z-index: 1;
