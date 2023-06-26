@@ -25,6 +25,9 @@ defineProps({
   height: 100%;
   position: relative;
   section{
+    //To wrap content
+    max-width: calc(50vw + 360px);
+
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -40,7 +43,8 @@ defineProps({
     }
   }
   img{
-    filter: brightness(60%);
+    //I want the text content to be legible on top of the background image.
+    filter: brightness(55%);
     position: absolute;
     inset: 0;
     z-index: 0;

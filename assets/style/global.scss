@@ -2,7 +2,18 @@
 $horizontal-spacing: 24px;
 $color-yellow: #F0BB46;
 $color-navy: #041852;
+$color-blue: #003669;
 $header-height: 64px;
+$font-heading: 'Open Sans', sans-serif;
+$font-paragraph: 'Roboto', serif; 
+
+//These media-query limitations may need some testing
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
+$desktop-breakpoint-extra: 1600px;
+
+
 
 //Google fonts. I'm not a big fan of using font APIs for integrity reasons, but just for convenience.
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100&display=swap');

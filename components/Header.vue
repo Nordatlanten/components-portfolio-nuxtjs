@@ -1,5 +1,10 @@
 <!-- This component is built mobile-first. I will initially build it using media-queries, but more modern approaches may be implemented in the future. The component has a slot for branding (e.g. a logo) and a slot for navigation links. An extra component will be loaded as a "hamburger slider" to the right side of the header component. A component may eventually be created for the navigation menu.-->
 
+<!-- To do: -->
+<!-- Style the slide menu container -->
+<!-- Consider moving the slide menu to its own component file -->
+<!--  -->
+
 <template>
   <header>
     <div class="content1">
@@ -70,6 +75,17 @@ header {
     align-items: center;
     gap: 16px;
   }
+
+  //Navigation should be hidden in mobile view.
+  nav{
+    display: none;
+  }
+
+   @media screen and (min-width: $tablet-breakpoint){
+    nav{
+      display: flex;;
+    }
+   }
 }
 
 
@@ -120,7 +136,6 @@ a:active {
     top: 4px;
   }
   &__content{
-    z-index: 1;
     background: #333;
     width: 30vw;
     position: fixed;
@@ -131,6 +146,7 @@ a:active {
     transition: transform 0.3s ease, width 0.3s ease;
 
     &--expanded{
+      z-index: 3;
       transform: translateX(0);
     }
   }

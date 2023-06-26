@@ -1,5 +1,5 @@
 <template>
-  <Button/>
-  <Button secondary />
-  <Button naked />
+  <Button text="default"/>
+  <Button text="secondary" secondary />
+  <Button text="naked" naked />
 </template>
